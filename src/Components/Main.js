@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Container,Image,Col,Row,Carousel} from 'react-bootstrap'
+import {Container,Image,Col,Row,Carousel,Button} from 'react-bootstrap'
 function Main() {
     const [best_sellers] = useState([
         {img:'https://dynamic.zacdn.com/Em1-9VcXC79sKEby1n4eyysBoMQ=/fit-in/224x327/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/gap-6600-8217142-1.jpg',title:`ADIDAS`,subtitle:'rapidazen i sneakers',price:'RM 199.00'},
@@ -33,10 +33,10 @@ function Main() {
                         <Image src="https://static-my.zacdn.com/cms/kids/kids_junior_filter_v3.jpg" className="banner"/>
                     </Col>
                 </Row>
-
-                <h1 className="text-center mt-5 pt-5 mb-3">Best Sellers</h1>
-
-                <Carousel fade>
+                <div style={{height:100}}></div>
+                <h1 className="text-center">Best Sellers</h1>
+                <div style={{height:20}}></div>
+                <Carousel fade >
                     {
                         best_sellers.map((d,i)=>{
                             if(i%4 === 0 && (i+4)<=best_sellers.length){
@@ -46,33 +46,33 @@ function Main() {
                                             <Col>
                                                 <Image src={best_sellers[i].img} className="banner"/>
                                                 <div className="text-center caurosel-text">
-                                                    <p className="carousel_title font-weight-bold text-uppercase">{best_sellers[i].title}</p>
-                                                    <p className="carousel_subtitle text-capitalize">{best_sellers[i].subtitle}</p>
-                                                    <p className="carousel_price text-uppercase">{best_sellers[i].price}</p>
+                                                    <h6 className="carousel_title text-uppercase">{best_sellers[i].title}</h6>
+                                                    <p className="carousel_subtitle font-weight-bold text-capitalize">{best_sellers[i].subtitle}</p>
+                                                    <p className="carousel_price text-uppercase font-weight-bold">{best_sellers[i].price}</p>
                                                 </div>
                                             </Col>
                                             <Col>
                                                 <Image src={best_sellers[i+1].img} className="banner"/>
                                                 <div className="text-center caurosel-text">
-                                                    <p className="carousel_title font-weight-bold text-uppercase">{best_sellers[i+1].title}</p>
-                                                    <p className="carousel_subtitle text-capitalize">{best_sellers[i+1].subtitle}</p>
-                                                    <p className="carousel_price text-uppercase">{best_sellers[i+1].price}</p>
+                                                    <h6 className="carousel_title text-uppercase">{best_sellers[i+1].title}</h6>
+                                                    <p className="carousel_subtitle text-capitalize font-weight-bold">{best_sellers[i+1].subtitle}</p>
+                                                    <p className="carousel_price text-uppercase font-weight-bold">{best_sellers[i+1].price}</p>
                                                 </div>
                                             </Col>
                                             <Col>
                                                 <Image src={best_sellers[i+2].img} className="banner"/>
                                                 <div className="text-center caurosel-text">
-                                                    <p className="carousel_title font-weight-bold text-uppercase">{best_sellers[i+2].title}</p>
-                                                    <p className="carousel_subtitle text-capitalize">{best_sellers[i+2].subtitle}</p>
-                                                    <p className="carousel_price text-uppercase">{best_sellers[i+2].price}</p>
+                                                    <h6 className="carousel_title text-uppercase">{best_sellers[i+2].title}</h6>
+                                                    <p className="carousel_subtitle text-capitalize font-weight-bold">{best_sellers[i+2].subtitle}</p>
+                                                    <p className="carousel_price text-uppercase font-weight-bold">{best_sellers[i+2].price}</p>
                                                 </div>
                                             </Col>
                                             <Col>
                                                 <Image src={best_sellers[i+3].img} className="banner"/>
                                                 <div className="text-center caurosel-text">
-                                                    <p className="carousel_title font-weight-bold text-uppercase">{best_sellers[i+3].title}</p>
-                                                    <p className="carousel_subtitle text-capitalize">{best_sellers[i+3].subtitle}</p>
-                                                    <p className="carousel_price text-uppercase">{best_sellers[i+3].price}</p>
+                                                    <h6 className="carousel_title text-uppercase">{best_sellers[i+3].title}</h6>
+                                                    <p className="carousel_subtitle text-capitalize font-weight-bold">{best_sellers[i+3].subtitle}</p>
+                                                    <p className="carousel_price text-uppercase font-weight-bold">{best_sellers[i+3].price}</p>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -84,10 +84,42 @@ function Main() {
                         })
                     }
                 </Carousel>
+                <div style={{height:20}}></div>
+                <div className="d-flex justify-content-center align-content-center">
+                <Button variant="outline-secondary" size="lg">{'Explore More >'}</Button>
+                </div>
+                <div style={{height:100}}></div>
+                <h1 className="text-center mb-1">Just Arrived</h1>
+                <div style={{height:20}}></div>
+                <Row>
+                    <Col xs={4}>
+                        <div className="position-relative">
+                            <Image src="https://static-my.zacdn.com/cms/2021/CW12/NA19/K/DESKTOP_N1.jpg" style={{height:'423px'}} className="banner"/>
+                            <div className="position-absolute justarrived-card d-flex justify-content-center align-content-center w-100 p-3 pb-5">
+                                <div className="bg-white w-100 p-3">
+                                    <div className="headline">Kids New Arrivals From RM19</div>
+                                    <div className="subline">Prep for play this season with these budget-friendly picks.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="position-relative">
+                            <Image src="https://static-my.zacdn.com/cms/2021/CW12/StyleU129/K/DESKTOP_N2.jpg" style={{height:'423px'}} className="banner"/>
+                            <div className="position-absolute justarrived-card d-flex justify-content-center align-content-center w-100 p-3 pb-5">
+                                <div className="bg-white w-100 p-3">
+                                    <div className="headline">SUSTAINABLE STYLES UNDER RM129</div>
+                                    <div className="subline">Make the conscious choice with these sustainably-created picks.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
 
-            <div style={{height:50}}></div>
+
 
             </Container> 
+                <div style={{height:20}}></div>
         </>
     )
 }
