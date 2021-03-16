@@ -13,3 +13,13 @@ body,html{
 .banner{
     width: 100%;
 }
+
+.caurosel-text{
+font-size: 12px;
+line-height: 5px;
+}
+
+/* .carousel-control-next-icon, .carousel-control-prev-icon {
+    background: black 50%/100% 100% no-repeat !important;
+    border-radius: 50% !important;
+} */
