@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Image,Col,Row,Carousel,Button} from 'react-bootstrap'
+import {Image,Col,Row,Carousel} from 'react-bootstrap'
 
 function Bestseller() {
 

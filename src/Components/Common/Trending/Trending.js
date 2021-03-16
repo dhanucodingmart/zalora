@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,Image,Col,Row,Carousel,Button} from 'react-bootstrap'
+import {Image,Col,Row} from 'react-bootstrap'
 
 function Trending() {
     return (

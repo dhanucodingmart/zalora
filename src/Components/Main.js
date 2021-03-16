@@ -3,6 +3,7 @@ import {Container,Image,Col,Row} from 'react-bootstrap'
 import Trending from './Common/Trending/Trending'
 import Arrived from './Common/Arrived/Arrived'
 import Bestseller from './Common/Bestseller/Bestseller'
+import Featured from './Common/Featured/Featured'
 function Main() {
     return (
         <>
@@ -27,6 +28,7 @@ function Main() {
                 <Bestseller/>
                 <Arrived/>
                 <Trending/>
+                <Featured/>
             </Container> 
                 <div style={{height:20}}></div>
         </>
