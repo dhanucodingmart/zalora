@@ -47,12 +47,6 @@ line-height: 8px;
     color: white !important;
 
 }
-
-.btn-outline-secondary:focus{
-    box-shadow: none !important;
-    outline: none !important;
-}
-
 .justarrived-card{
     bottom: 0px;
     right:0px;

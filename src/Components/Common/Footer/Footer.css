@@ -1,0 +1,109 @@
+.main__footer {
+	width: 100%;
+	background-color: black;
+	color: white;
+
+    font-size: 1.2rem;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: hsla(0,0%,100%,.7)
+}
+.main__footer h4{
+    margin: 32px 0px 20px;
+    color: white;
+}
+.main__content
+{
+    display: grid;
+	grid-template-columns: 4fr 2fr 2fr 4fr;
+	grid-template-areas:
+		"a b c d"
+		"a b c d"
+		"a b c d"
+		"a b c d";
+}
+.main__footer ul > li {
+	list-style: none;
+	background: transparent;
+}
+.main__footer div {
+	padding: 10px;
+}
+.section__1 {
+	grid-area: a;
+}
+.section__2 {
+	grid-area: b;
+}
+
+.section__3 {
+	grid-area: c;
+}
+.section__4 {
+	grid-area: d;
+}
+
+.input__form input{
+    background: white;
+    height: 36px;
+    padding: 8px;
+    width: 100%;
+}
+
+.social__icons > svg
+{
+    display: inline-block;
+    margin: 1rem;
+    
+}
+span
+{
+    color: yellow;
+}
+.fluid{
+    box-sizing: border-box;
+    max-width: 1344px;
+    min-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(3.33% + 10px);
+    padding-right: calc(3.33% + 10px);
+}
+
+.zalora_logo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 239px;
+    height: 42px;
+    background-position: -10540px 0;
+}
+
+ul{
+    padding: 0%;
+}
+
+
+.btn-outline-inverted{
+    color: white !important;
+    padding-top:12px;
+    padding-bottom:12px;
+    text-align: center;
+    margin:0px ;
+    background: black;
+    transition: background-color .3s,color .2s;
+    border: 1px solid white;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.btn-outline-inverted:hover{
+    background-color: white !important;
+    color: black !important;
+
+}
