@@ -5,7 +5,7 @@ function Trending() {
     return (
         <>
             {/* Trending now SECTION */}
-            <div style={{height:100}}></div>
+            <div style={{height:80}}></div>
             <div className="text-center title mb-1">Trending Now</div>
             <div style={{height:20}}></div>
             <Row>

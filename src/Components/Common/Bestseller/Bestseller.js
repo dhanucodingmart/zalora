@@ -15,7 +15,7 @@ function Bestseller() {
     ])
     return (
         <>
-            <div style={{height:100}}></div>
+            <div style={{height:80}}></div>
             <div className="text-center title">Best Sellers</div>
             <div style={{height:20}}></div>
             <Carousel fade >

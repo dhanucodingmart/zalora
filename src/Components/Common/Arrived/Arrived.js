@@ -5,7 +5,7 @@ function Arrived() {
     return (
         <>
             {/* JUST ARRIVED SECTION */}
-            <div style={{height:100}}></div>
+            <div style={{height:80}}></div>
             <div className="text-center title mb-1">Just Arrived</div>
             <div style={{height:20}}></div>
             <Row>

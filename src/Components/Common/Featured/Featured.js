@@ -4,7 +4,7 @@ import {Image,Col,Row} from 'react-bootstrap'
 function Featured() {
     return (
         <>
-        <div style={{height:100}}></div>
+        <div style={{height:80}}></div>
         <div className="text-center title">Featured Brands</div>
         <div style={{height:20}}></div>
         <Row>
