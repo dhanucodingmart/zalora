@@ -9,7 +9,7 @@ function Arrived() {
             <div className="text-center title mb-1">Just Arrived</div>
             <div style={{height:20}}></div>
             <Row>
-                <Col xs={4}>
+                <Col xs={12} lg={4}>
                     <div className="position-relative">
                         <Image src="https://static-my.zacdn.com/cms/2021/CW12/NA19/K/DESKTOP_N1.jpg" style={{height:'423px'}} className="banner"/>
                         <div className="position-absolute justarrived-card d-flex justify-content-center align-content-center w-100 p-3 pb-5">

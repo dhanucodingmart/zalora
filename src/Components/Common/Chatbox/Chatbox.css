@@ -1,0 +1,15 @@
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  background-image: url(https://cdn.yellowmessenger.com/i65duiS6PX2U1600828720088.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

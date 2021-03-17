@@ -85,7 +85,7 @@ function SubNavbar() {
                                 setdropshow(null)
                                 document.getElementById('main').classList.remove('low-brightness')
                             }}
-                             key={i} className="subnav-item position-relative">{d}
+                             key={i} className="subnav-item">{d}
                              </div>))
 
                     }

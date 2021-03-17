@@ -57,7 +57,7 @@ function Main() {
                 </div>
             </div>
 
-            <Container>
+            <Container fluid="md">
                 <div style={{height:30}}></div>
                 <Image src="https://static-my.zacdn.com/cms/2021/CW12/Buy230off/K/DESKTOP_Hero.jpg" className="banner"/>
                 <div style={{height:20}}></div>
