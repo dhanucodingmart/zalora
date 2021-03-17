@@ -79,7 +79,6 @@ function SubNavbar() {
                             onMouseEnter={(e)=>{
                                 setdropsetdata(dropdata[e.target.innerHTML])
                                 setdropshow(e.target.innerHTML)
-                                console.log(document.getElementById('main'))
                                 document.getElementById('main').classList.add('low-brightness')
                             }}
                             onMouseLeave={()=>{

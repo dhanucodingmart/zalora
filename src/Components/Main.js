@@ -193,18 +193,23 @@ function Main() {
                             Our locations
                         </div>
                         <div>
-
+                        <img  alt="Global fashion group"
+                        src="/flags.png"/>          
                         </div>
                     </Col>
                     <Col>
                         <div className="seo-title mb-4" style={{color:'black',letterSpacing:'0px'}}>
                             Secure payment
                         </div>                    
+                        <img  alt="Global fashion group"
+                        src="/cards.png"/>          
                     </Col>
                     <Col>
                         <div className="seo-title mb-4" style={{color:'black',letterSpacing:'0px'}}>
                             Delivery Providers
                         </div>
+                        <img  alt="Global fashion group"
+                        src="/prov.png"/>          
                     </Col>
                     <Col></Col>
                     <Col>
