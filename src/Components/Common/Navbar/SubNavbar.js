@@ -85,13 +85,24 @@ function SubNavbar() {
                                 setdropshow(null)
                                 document.getElementById('main').classList.remove('low-brightness')
                             }}
-                             key={i} className="subnav-item">{d}</div>))
+                             key={i} className="subnav-item position-relative">{d}
+                             </div>))
+
                     }
                 </div>
             </div>
             {
                 dropshow &&
-                <div className="drop">
+                <div
+                onMouseEnter={(e)=>{
+                    setdropshow(dropshow)
+                    document.getElementById('main').classList.add('low-brightness')
+                }}
+                onMouseLeave={()=>{
+                    setdropshow(null)
+                    document.getElementById('main').classList.remove('low-brightness')
+                }}                
+                className="drop">
                     <div className="fluid pt-4 pb-4">
                         <Row className="top-title" style={{textTransform:'uppercase',fontSize:'0.9rem'}}>
                             <Col>

@@ -1,82 +1,113 @@
-
 /* Main Navbar */
 
-.main-navbar{
-    width: 100%;
-    background-color: #000;
-    height: 48px;
-    padding: 0px 16px;
+.main-navbar {
+  width: 100%;
+  background-color: #000;
+  height: 48px;
+  padding: 0px 16px;
 
-    display: flex;
-    align-items: center;
-    margin: auto;
-    box-sizing: border-box;
-}
-
-.logo{
-    fill:#fff;
-    width: 132px;
-    padding-top: 5px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  box-sizing: border-box;
 }
 
-.mainnav-items{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: max-content;
-    white-space: nowrap;
-    line-height: 100%;
-    list-style: none;
+.logo {
+  fill: #fff;
+  width: 132px;
+  padding-top: 5px;
 }
 
-.mainnav-item{
-    display: flex;
-    width: max-content;
-    white-space: nowrap;
-    line-height: 100%;
-    color: #fff;
-    padding-right: 20px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
+.mainnav-items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  line-height: 100%;
+  list-style: none;
 }
 
-.main-navbar .searchlogo{
-    padding: 2px;
-    background-color: #fff;
-    color: #404040;
-    transition: border .3s;
-    border: 1px solid #dfdfdf;
-    border-radius: 0;
-    width: 100%;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    outline: 0;
-    float: left;
-}
-.searchlogo::placeholder{
-    color: #dfdfdf;
-    font-weight: bold;
-}
-.main-navbar .searchlogobutton{
-    float: right;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    margin-right: 4px;
-    right: 0;
-    border: 0;
-    position: absolute;
-    background: none;
-    z-index: 2;
-    outline: 0;
+.mainnav-item {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  line-height: 100%;
+  color: #fff;
+  padding-right: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-.main-navbar .searchlogo-wrap{
-    width: 100%;
-    position: relative;
-    min-width: 250px;
-    max-width: 700px;
+.main-navbar .searchlogo {
+  padding: 2px;
+  background-color: #fff;
+  color: #404040;
+  transition: border 0.3s;
+  border: 1px solid #dfdfdf;
+  border-radius: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: 0;
+  float: left;
+}
+.searchlogo::placeholder {
+  color: #dfdfdf;
+  font-weight: bold;
+}
+.main-navbar .searchlogobutton {
+  float: right;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-right: 4px;
+  right: 0;
+  border: 0;
+  position: absolute;
+  background: none;
+  z-index: 2;
+  outline: 0;
+}
+
+.main-navbar .searchlogo-wrap {
+  width: 100%;
+  position: relative;
+  min-width: 250px;
+  max-width: 700px;
+}
+
+.drop-main {
+  position: absolute;
+  top: 36px;
+  right: -15px;
+  background: white;
+  box-shadow: 2px 5px 6px -6px black;
+  /* height: 200px; */
+  /* width: 100%; */
+  transition: 1s ease-in-out;
+}
+
+.drop-main-title {
+  background: #5c5c5c;
+  padding: 15px;
+  line-height: 12px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  min-width: 200px;
+}
+
+.drop-main-body {
+  padding: 18px;
+  color: black;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.drop-main-body div {
+  margin-bottom: 10px;
 }

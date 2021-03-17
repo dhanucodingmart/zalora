@@ -10,6 +10,9 @@ export default function MainNavbar() {
         {path:'',title:'lifestyle'},
 
     ])
+    const [dropuser, setdropuser] = useState(false)
+    const [dropCart, setdropCart] = useState(false)
+    const [dropwish, setdropwish] = useState(false)
     return (
         <>
             <div className="main-navbar">
@@ -46,20 +49,89 @@ export default function MainNavbar() {
                     </button>
                 </div>
                 <ul className="mainnav-items pl-3">
-                     <li className="mainnav-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-person" viewBox="0 0 16 16">
+                     <li className="mainnav-item position-relative">
+                        <svg 
+                        onMouseEnter={()=>{setdropuser(true)}}
+                        onMouseLeave={()=>{setdropuser(false)}}
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-person" viewBox="0 0 16 16">
                         <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                         </svg>
+                        {
+                            dropuser &&
+                            <div
+                                onMouseEnter={()=>{setdropuser(true)}}
+                                onMouseLeave={()=>{setdropuser(false)}}                            
+                            >
+                            <svg style={{position:'absolute',top:'23px',right:'50%'}}
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#5c5c5c" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                            <div className="drop-main">
+                                <div className="drop-main-title">
+                                    welcome
+                                </div>
+                                <div className="drop-main-body">
+                                    {
+                                        ['Login','register','track my orders','help'].map((d,i)=>(
+                                            <div key={i}>{d}</div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                            </div>
+                        }
                     </li>
-                    <li className="mainnav-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-heart" viewBox="0 0 16 16">
+                    <li className="mainnav-item position-relative">
+                        <svg 
+                        onMouseEnter={()=>{setdropwish(true)}}
+                        onMouseLeave={()=>{setdropwish(false)}}
+                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-heart" viewBox="0 0 16 16">
                         <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                         </svg>
+
+                        {
+                            dropwish &&
+                            <div
+                                onMouseEnter={()=>{setdropwish(true)}}
+                                onMouseLeave={()=>{setdropwish(false)}}                             
+                            >
+                            <svg style={{position:'absolute',top:'23px',right:'50%'}}
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#5c5c5c" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                            <div className="drop-main">
+                                <div className="drop-main-title">
+                                    YOU HAVE NO ITEM(S) IN YOUR WISHLIST
+                                </div>
+                            </div>
+                            </div>
+                        }
+
                     </li>
-                    <li >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-cart2" viewBox="0 0 16 16">
+                    <li className="position-relative">
+                        <svg 
+                        onMouseEnter={()=>{setdropCart(true)}}
+                        onMouseLeave={()=>{setdropCart(false)}}
+                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" className="bi bi-cart2" viewBox="0 0 16 16">
                         <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                        </svg>                        
+                        </svg>    
+                        {
+                            dropCart &&
+                            <div
+                                onMouseEnter={()=>{setdropCart(true)}}
+                                onMouseLeave={()=>{setdropCart(false)}}                             
+                            >
+                            <svg style={{position:'absolute',top:'23px',right:'50%'}}
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#5c5c5c" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                            </svg>
+                            <div className="drop-main">
+                                <div className="drop-main-title text-white">
+                                    MY BAG 0 ITEM
+                                </div>
+                            </div>
+                            </div>
+                        }
                     </li>
                 </ul>
 
