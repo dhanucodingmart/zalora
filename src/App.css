@@ -97,8 +97,36 @@ line-height: 8px;
 }
 
 .top-title{
-        color: #6d6e6e;
-        line-height: 28px;
-            font-size: 1.2rem;
+    color: #6d6e6e;
+    line-height: 28px;
+    font-size: 1.2rem;
     letter-spacing: normal;
+}
+
+.add-item{
+    float: left;
+    margin-left: 3px;
+    font-family: 'Apercu', arial, sans-serif;
+    font-size:9.7px;
+    text-transform: uppercase;
+    padding-top: 0px;
+    display: inline-flex;
+    display: -webkit-inline-box;
+    line-height: 1.6;
+    margin-left: 15px;
+}
+.topadd{
+    background: #5C5C5C;
+    font-size: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0px;
+    opacity: 0.8;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
 }

@@ -1,40 +1,52 @@
-.subNavbar{
-    background: #dfdfdf;
+.subNavbar {
+  background: #dfdfdf;
 }
-.subNavbar-wrap{
-    margin: auto;
-    display: table;
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 100%;
-    max-width: 1280px;
-    box-sizing: border-box;
-    padding-top: 12px;
-}
-
-
-
-.subnav-items{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: max-content;
-    white-space: nowrap;
-    line-height: 100%;
-    list-style: none;
+.subNavbar-wrap {
+  margin: auto;
+  display: table;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
+  padding-top: 12px;
 }
 
-.subnav-item{
-    display: flex;
-    padding-right: 20px;
-    letter-spacing: 1px;
+.subnav-items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  line-height: 100%;
+  list-style: none;
+}
 
-    text-transform: uppercase;
-    display: inline-block;
-    border-bottom: 4px solid transparent;
-    padding-bottom: 8px;
-    transition: .2s ease;
-    white-space: nowrap;
-    cursor: pointer;
+.subnav-item {
+  display: flex;
+  padding-right: 0px;
+  margin-right: 20px;
+  letter-spacing: 1px;
 
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 8px;
+  transition: 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.subnav-item:hover {
+  border-bottom: black 4px solid;
+}
+
+.drop {
+  background: white;
+  box-shadow: 0 5px 6px -6px black;
+  /* height: 400px; */
+  width: 100%;
+}
+
+.low-brightness {
+  filter: blur(3px);
 }
