@@ -71,7 +71,7 @@ function SubNavbar() {
     const [dropsetdata, setdropsetdata] = useState(null)
     return (
         <>
-        <div className="subNavbar">
+        <div className="subNavbar d-none d-md-block">
             <div className="subNavbar-wrap">
                 <div className="subnav-items">
                     {

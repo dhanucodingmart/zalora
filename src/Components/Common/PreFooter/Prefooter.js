@@ -3,7 +3,50 @@ import {Col,Row} from 'react-bootstrap'
 function Prefooter() {
     return (
         <>
-            <div className="fluid">
+            <div className="d-block d-md-none p-3 mt-5">
+                <div>
+                    <div className="seo-title mb-4">
+                        SHOP KIDS FASHION NOW AT ZALORA MALAYSIA
+                    </div>
+                    <div className="seo-subtitle">
+                        All parents would know the joy they get from seeing their little one grow up, day by day. And one of the joys of being a parent also comes up dressing up your kid; it’s like being your kid’s personal fashion stylist. Today, children’s clothes are somewhat reminiscent to that of adult fashion wear, just that it’s the mini version. Here at ZALORA Malaysia, we have a wide variety of kids fashion items for both your boys and girls to enjoy. With a huge palette of colours to choose from, you and your child will be spoilt for choices. Our shoes are stylishly cute – they reflect the season’s most coveted kids shoe trends adorned with the most adored cartoon characters of children. For girls, they have a lot more variety to choose from. From flowers to ribbons to buckles, they can also choose from the different types of shoes such as flats, wedges, sandals, slippers, loafers, Mary Janes and sneakers.
+                    </div>
+                </div>
+            </div>
+            <div className="d-block d-md-none mt-2">
+                <div className="d-flex justify-content-around mt-5">
+                    <div>
+                        Contact
+                    </div>
+                    <div>
+                        About
+                    </div>
+                    <div>
+                        Login
+                    </div>
+                </div>
+                <hr/>
+                <div className="d-flex justify-content-around mt-2">
+                    <div>
+                        FAQ
+                    </div>
+                    <div>
+                        Terms and Conditions
+                    </div>
+                    <div>
+                        policy
+                    </div>
+                </div>
+                <hr/>
+                <div className="d-flex justify-content-center mt-2">
+                    <div className="font-weight-bold">
+                        change to desktop version
+                    </div>
+                </div>
+                <hr/>    
+            </div>
+
+            <div className="fluid d-none d-md-block">
                 <div style={{height:70}}></div>
                 <Row>
                     <Col>

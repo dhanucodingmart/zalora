@@ -8,7 +8,8 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div style={{height:'84px'}}></div>
+      <div style={{height:'84px'}} className="d-none d-md-block"></div>
+      <div style={{height:'48px'}} className="d-block d-md-none"></div>
       <Main/>
       {/* <Chatbox/> */}
       <Footer/>

@@ -14,7 +14,7 @@ function Bestseller() {
         {img:'https://dynamic.zacdn.com/fq_5CiwrjtawJSWcrBOiB9AVz18=/fit-in/224x327/filters:quality(95):fill(ffffff)/http://static.my.zalora.net/p/electro-denim-lab-9038-9115442-1.jpg',title:`ADIDAS`,subtitle:'rapidazen i sneakers',price:'RM 199.00'},
     ])
     return (
-        <>
+        <div className="d-none d-md-block">
             <div style={{height:80}}></div>
             <div className="text-center title">Best Sellers</div>
             <div style={{height:20}}></div>
@@ -70,7 +70,7 @@ function Bestseller() {
             <div className="d-flex justify-content-center align-content-center">
             <div className="btn-outline">{'Explore More >'}</div>
             </div>            
-        </>
+        </div>
     )
 }
 

@@ -3,7 +3,7 @@ import {Image,Col,Row} from 'react-bootstrap'
 
 function promotion() {
     return (
-        <>
+        <div className="d-none d-md-block">
         <div style={{height:80}}></div>
         <div className="text-center title">Promotion And Deals</div>
         <div style={{height:20}}></div>
@@ -18,7 +18,7 @@ function promotion() {
                 <Image src="https://static-my.zacdn.com/cms/DY/2020/CW33-M-THREAD_MAGAZINE_Banner.jpg" className="banner"/>
             </Col>
         </Row>      
-        </>
+        </div>
     )
 }
 

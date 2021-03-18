@@ -9,7 +9,20 @@ import Prefooter from './Common/PreFooter/Prefooter'
 function Main() {
     return (
         <div id="main">
-            <div className="subNavbar-wrap">
+            <div className="mobile-header">
+                {
+                    ['Women','Men','Kids','Beauty','Sport'].map((d,i)=>{
+                        if(d === 'Kids'){
+                        return (<div key={i} className="mobile-header-item active-item">{d}</div>)
+                        }else{
+                        return (<div key={i} className="mobile-header-item">{d}</div>)
+                        }
+                    }
+                    )
+                }
+
+            </div>
+            <div className="subNavbar-wrap d-none d-md-flex">
                 <div className="subnav-items">
                     <div className="add-item">
                         <svg xmlns="http://www.w3.org/2000/svg" style={{marginRight:6}} width="18" height="18" fill="currentColor" className="bi bi-handbag" viewBox="0 0 16 16">
@@ -46,7 +59,7 @@ function Main() {
                     </div>
                 </div>
             </div>
-            <div className="d-flex justify-content-end">
+            <div className="d-none d-md-flex justify-content-end">
                 <div className="topadd mr-5">
                     DOWNLOAD & GET EXTRA 25% OFF + 25% CASHBACK
                     <svg style={{marginLeft:10,fontWeight:'bold'}}
@@ -57,21 +70,21 @@ function Main() {
                 </div>
             </div>
 
-            <Container fluid="md">
-                <div style={{height:30}}></div>
+            <Container>
+                <div style={{height:30}} className="d-none d-md-block"></div>
                 <Image src="https://static-my.zacdn.com/cms/2021/CW12/Buy230off/K/DESKTOP_Hero.jpg" className="banner"/>
-                <div style={{height:20}}></div>
-                <Image src="https://static-my.zacdn.com/cms/2021/CW11/ZNOW/K/DESKTOP_Fat_Skinny.jpg" className="banner"/>
-                <div style={{height:20}}></div>
+                <div style={{height:20}} className="d-none d-md-block"></div>
+                <Image src="https://static-my.zacdn.com/cms/2021/CW11/ZNOW/K/DESKTOP_Fat_Skinny.jpg" className="banner d-none d-md-block"/>
+                <div style={{height:20}} className="d-none d-md-block"></div>
                 <Row>
                     <Col>
-                        <Image src="https://static-my.zacdn.com/cms/kids/kids_baby_filter_v2.jpg" className="banner"/>
+                        <Image src="https://static-my.zacdn.com/cms/kids/kids_baby_filter_v2.jpg" className="banner d-none d-md-block"/>
                     </Col>
                     <Col>
-                        <Image src="https://static-my.zacdn.com/cms/kids/kids_filter_v3.jpg" className="banner"/>
+                        <Image src="https://static-my.zacdn.com/cms/kids/kids_filter_v3.jpg" className="banner d-none d-md-block"/>
                     </Col>
                     <Col>
-                        <Image src="https://static-my.zacdn.com/cms/kids/kids_junior_filter_v3.jpg" className="banner"/>
+                        <Image src="https://static-my.zacdn.com/cms/kids/kids_junior_filter_v3.jpg" className="banner d-none d-md-block"/>
                     </Col>
                 </Row>
 
@@ -83,6 +96,7 @@ function Main() {
             </Container> 
             <Prefooter/>
             <div style={{height:20}}></div>
+            <div className="d-block d-md-none" style={{height:18}}></div>
         </div>
     )
 }

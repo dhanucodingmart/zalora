@@ -1,109 +1,117 @@
 .main__footer {
-	width: 100%;
-	background-color: black;
-	color: white;
+  width: 100%;
+  background-color: black;
+  color: white;
 
-    font-size: 1.2rem;
-    line-height: 24px;
-    letter-spacing: normal;
-    color: hsla(0,0%,100%,.7)
+  font-size: 1.2rem;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: hsla(0, 0%, 100%, 0.7);
 }
-.main__footer h4{
-    margin: 32px 0px 20px;
-    color: white;
+.main__footer h4 {
+  margin: 32px 0px 20px;
+  color: white;
 }
-.main__content
-{
-    display: grid;
-	grid-template-columns: 4fr 2fr 2fr 4fr;
-	grid-template-areas:
-		"a b c d"
-		"a b c d"
-		"a b c d"
-		"a b c d";
+.main__content {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 4fr;
+  grid-template-areas:
+    "a b c d"
+    "a b c d"
+    "a b c d"
+    "a b c d";
 }
 .main__footer ul > li {
-	list-style: none;
-	background: transparent;
+  list-style: none;
+  background: transparent;
 }
 .main__footer div {
-	padding: 10px;
+  padding: 10px;
 }
 .section__1 {
-	grid-area: a;
+  grid-area: a;
 }
 .section__2 {
-	grid-area: b;
+  grid-area: b;
 }
 
 .section__3 {
-	grid-area: c;
+  grid-area: c;
 }
 .section__4 {
-	grid-area: d;
+  grid-area: d;
 }
 
-.input__form input{
-    background: white;
-    height: 36px;
-    padding: 8px;
-    width: 100%;
+.input__form input {
+  background: white;
+  height: 36px;
+  padding: 8px;
+  width: 100%;
 }
 
-.social__icons > svg
-{
-    display: inline-block;
-    margin: 1rem;
-    
+.social__icons > svg {
+  display: inline-block;
+  margin: 1rem;
 }
-span
-{
-    color: yellow;
+span {
+  color: yellow;
 }
-.fluid{
-    box-sizing: border-box;
-    max-width: 1344px;
-    min-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: calc(3.33% + 10px);
-    padding-right: calc(3.33% + 10px);
+.fluid {
+  box-sizing: border-box;
+  max-width: 1344px;
+  min-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(3.33% + 10px);
+  padding-right: calc(3.33% + 10px);
 }
 
-.zalora_logo{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 239px;
-    height: 42px;
-    background-position: -10540px 0;
+.zalora_logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 239px;
+  height: 42px;
+  background-position: -10540px 0;
 }
 
-ul{
-    padding: 0%;
+ul {
+  padding: 0%;
 }
 
-
-.btn-outline-inverted{
-    color: white !important;
-    padding-top:12px;
-    padding-bottom:12px;
-    text-align: center;
-    margin:0px ;
-    background: black;
-    transition: background-color .3s,color .2s;
-    border: 1px solid white;
-    text-transform: uppercase;
-    display: inline-block;
-    width: 100%;
-    font-size: 12px;
-    line-height: 10px;
-    text-align: center;
-    cursor: pointer;
-    letter-spacing: 1px;
+.btn-outline-inverted {
+  color: white !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  margin: 0px;
+  background: black;
+  transition: background-color 0.3s, color 0.2s;
+  border: 1px solid white;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 10px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
-.btn-outline-inverted:hover{
-    background-color: white !important;
-    color: black !important;
+.btn-outline-inverted:hover {
+  background-color: white !important;
+  color: black !important;
+}
 
+.mobile-footer {
+  height: 50px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: rgb(71, 71, 71);
+  position: fixed;
+  bottom: 0px;
+  background: rgb(244, 244, 244);
+  width: 100%;
+  border-top: 1px solid rgb(222, 222, 222);
+  z-index: 970;
+  padding-top: 2px;
 }
