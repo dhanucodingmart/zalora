@@ -9,7 +9,7 @@ import Prefooter from './Common/PreFooter/Prefooter'
 function Main() {
     return (
         <div id="main">
-            <div className="mobile-header">
+            <div className="mobile-header d-flex d-md-none">
                 {
                     ['Women','Men','Kids','Beauty','Sport'].map((d,i)=>{
                         if(d === 'Kids'){

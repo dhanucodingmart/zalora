@@ -156,14 +156,17 @@ function Footer() {
 				<div className="row" style={{width:'100%',height:'200%'}}>
 					<div className="col d-flex justify-content-center align-content-center ">
 						<div>
-<svg width="24" height="24" viewBox="0 0 24 24" focusable="false" fill="currentColor" className="icon ml-2 mt-1"><path d="M6.492 5v1.097h9.97L6 18.062v.438h12.75v-1.098H8.223L18.68 5.52 18.676 5z"></path></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" focusable="false" fill="currentColor" 
+							className="icon ml-2 mt-1">
+								<path d="M6.492 5v1.097h9.97L6 18.062v.438h12.75v-1.098H8.223L18.68 5.52 18.676 5z"></path>
+								</svg>
 							<p>Home</p>
 						</div>
 					</div>
 					<div className="col d-flex justify-content-center align-content-center">
 						<div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" className="bi bi-list-ul ml-2 mt-1" viewBox="0 0 16 16">
-							<path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+							<path fillRule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
 							</svg>
 							<p>Category</p>
 						</div>
